@@ -5,6 +5,7 @@
  *
  * Description: the printf function inside main will print
  * with proper grammer, but the outcome is a piece of art,
+ * Return: 0
  */
 
 int main(void)
