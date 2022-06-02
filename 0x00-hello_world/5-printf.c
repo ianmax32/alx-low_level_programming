@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- * main: this program prints a string using
- * a printf function in main.
+ * main - this program prints a string using a printf function in main.
  *
- * description: the printf function inside main will print
+ * Description: the printf function inside main will print
  * with proper grammer, but the outcome is a piece of art,
  */
 
