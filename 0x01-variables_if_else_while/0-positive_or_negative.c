@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include <time.h>
+#include <stdlib.h>
 /**
  * main - this program assigns random numbers and prints them
  * Description: the assigned number in the variable is displayed as 
