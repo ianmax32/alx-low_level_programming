@@ -1,8 +1,10 @@
 #include <stdio.h>
 /**
- * main - printing single digit numbers seperated by commas and space between them
+ * main - printing single digit numbers seperated by commas and
+ * space between them
  * Description: using the main function
- * this program prints "0, 1, 2, 3, 4, 5, 6, 7, 8, 9" using putchar function
+ * this program prints "0, 1, 2, 3, 4, 5, 6, 7, 8, 9" using
+ * putchar function
  * Return: 0
  */
 int main(void)
@@ -18,5 +20,5 @@ for (c = 0; c < 10; c++)
 	}
 }
 putchar('\n');
-return 0;
+return (0);
 }
