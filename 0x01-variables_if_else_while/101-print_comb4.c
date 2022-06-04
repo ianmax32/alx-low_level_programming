@@ -11,9 +11,10 @@
 int main(void)
 {
 	int a = 0;
-	int b;	
+	int b;
 	int c;
 	int d;
+
 	while (a <= 999)
 	{
 		b = ((a / 100) + '0');
