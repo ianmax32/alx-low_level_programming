@@ -14,7 +14,7 @@ int main(void)
 	int b;	
 	int c;
 	int d;
-	while (a < 999)
+	while (a <= 999)
 	{
 		b = ((a / 100) + '0');
 		c = ((a % 10) + '0');
@@ -29,8 +29,8 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
-		a++;
 		}
+		a++;
 	}
 	putchar('\n');
 	return (0);
