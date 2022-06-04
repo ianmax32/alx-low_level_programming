@@ -5,8 +5,9 @@
  *
  * Description: the numbers printed must be seperated by , and the
  * numbers must be different, only the smallest combination must be 
- * printed in ascending order using the putchar function
- * Return: 0
+ * printed in ascending order using the putchar function.
+ *
+ * Return:0
  */
 
 int main(void)
