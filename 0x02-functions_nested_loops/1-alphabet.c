@@ -9,13 +9,7 @@
  * Return: 0
  */
 
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
-
-void print_aphabet()
+int print_aphabet(void)
 {
 	char c;
 
@@ -24,4 +18,5 @@ void print_aphabet()
 		_putchar(c);
 	}
 _putchar('\n');
+return (0);
 }
