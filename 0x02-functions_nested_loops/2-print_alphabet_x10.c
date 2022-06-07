@@ -5,7 +5,7 @@
  *description: the alphabet should be printed in lowercase
  *
  * Return: 0
- *2-print_alphabet_x10.c/
+ */
 
 void print_alphabet_x10(void)
 {
