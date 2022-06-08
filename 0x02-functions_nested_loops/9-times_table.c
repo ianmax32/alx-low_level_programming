@@ -17,7 +17,7 @@ void times_table(void)
 		for ( i = 1; i < 9; i++)
 		{
 			c = a * i;
-			printf("%d",c);
+			_putchar(c);
 			if (a < 9 || i <9)
 			{
 			_putchar(',');
