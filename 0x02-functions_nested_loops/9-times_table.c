@@ -27,7 +27,7 @@ void times_table(void)
 			}
 			if (i < 9)
 			{
-			printf("%3s, ");
+			printf(", ");
 			}
 		}
 		printf("\n");
