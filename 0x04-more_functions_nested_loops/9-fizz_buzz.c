@@ -2,10 +2,8 @@
 
 /**
  * main - program prints fizz on multiples of thr33 and buzz
- * on multiples of 5 and fizzbuz on multiples of both
- *
- * Description: program list numbers from 10 to 100 and checks multiples 
- * of three and five
+ * on multiples of 5 and fizzbuz on multiples of both.
+ * Description:program list numbers from 10 to 100 and checks multiples.
  * Return:0
  */
 
@@ -17,18 +15,18 @@ int main(void)
 	{
 		if (a % 3 == 0)
 		{
-			printf("%s ","Fizz");
+			printf("%s ", "Fizz");
 		}
 		else if (a % 5 == 0)
 		{
-			printf("%s ","Buzz");
+			printf("%s ", "Buzz");
 		}
 		else if (a % 3 == 0 || a % 5 == 0)
 		{
-			printf("%s ","FizzBuzz");
+			printf("%s ", "FizzBuzz");
 		}
 		else
-			printf("%d ",a);
+			printf("%d ", a);
 	}
 	printf('\n');
 }
