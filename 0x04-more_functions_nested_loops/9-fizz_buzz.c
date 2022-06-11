@@ -28,7 +28,7 @@ int main(void)
 		else
 			printf("%d", a);
 
-		if (a != 99)
+		if (a != 100)
 			printf(" ");
 	}
 	printf("\n");
