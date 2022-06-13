@@ -15,13 +15,14 @@ void puts_half(char *str)
 	{
 	}
 
-	a = a - 1;
 	if ((a % 2) == 0)
 	{
 		half = a / 2;
 	}
 	else
+	{
 		half = (a - 1) / 2;
+	}
 
 	while (str[half] != 0)
 	{
