@@ -13,7 +13,7 @@ char *cap_string(char *s)
 	while (s[a] != '\0')
 	{
 		if (s[a] == '\n' || s[a] == '\t' || s[a] == ' ')
-			s[++a] = s[++a} - 32;
+			s[++a] = s[++a] - 32;
 	}
 	return (0);
 }
