@@ -6,3 +6,4 @@
 char *_strcat(char *dest, char *src);
 
 #endif /* MAIN_H */
+char *_strncat(char *dest, char *src, int n);
