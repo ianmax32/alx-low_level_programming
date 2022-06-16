@@ -15,8 +15,9 @@ char *rot13(char *s)
 	{
 		for (b = 'a'; b < 'z'; b++)
 		{
-			if (s[a] == b || s[a] == (b - 32)
-					&& 'z' - b <= 13)
+			if ((s[a] == b) || s[a] == (b - 32) || ('z' - b) <= 13
+					|| (s[a] > 64 && s[a] < 123)
+					)
 			{
 				s[a] = b + 13;
 			}
@@ -25,5 +26,6 @@ char *rot13(char *s)
 		}
 	a++;
 	}
+	s[a] = '\0';
 	return (s);
 }
