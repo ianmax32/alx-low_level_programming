@@ -20,6 +20,7 @@ char *leet(char *s)
 			if (s[a] == b[i] || s[a] == (b[i] - 32))
 				s[a] = c[i];
 		}
+		a++;
 	}
 	return (s);
 }
