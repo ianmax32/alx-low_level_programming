@@ -20,15 +20,17 @@ char *cap_string(char *s)
 				|| s[a] == '}' || s[a] == '{'
 				|| s[a] == '(' || s[a] == ')'
 				)
-			for (b = 'a'; b < 'z'; b++)
+		{
+			for (b = 'a'; b <= 'z'; b++)
 			{
-				if (s[a++] == b && a != 0)
+				if (s[a + 1] == b && a != 0)
 				{
-					s[a++] = b - 32;
+					s[a + 1] = b - 32;
 				}
 				else if (s[a] == b && a == 0)
 					s[a] = b - 32;
 			}
+		}
 		a++;
 	}
 	return (s);
