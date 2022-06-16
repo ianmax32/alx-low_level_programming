@@ -17,7 +17,7 @@ char *string_toupper(char *s)
 		for (b = 'a'; b < 'z'; b++)
 		{
 			if (s[a] == b)
-				s[a] = s[a] - 32;
+				s[a] = b - 32;
 		}
 		a++;
 	}
