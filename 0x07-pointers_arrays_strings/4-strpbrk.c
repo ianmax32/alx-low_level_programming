@@ -27,5 +27,5 @@ char *_strpkbr(char *s, char *accept)
 			return (s + a);
 		a++;
 	}
-	return (0);
+	return (NULL);
 }
