@@ -20,12 +20,13 @@ unsigned int _strspn(char *s, char *accept)
 		while (accept[b] != '\0')
 		{
 			if (s[a] == accept[b])
-				c++;
+				c = 1;
 			b++;
 		}
 
-		if (c != 0)
-			a++;
+		if (c == 0)
+			break;
+		a++;
 	}
 	return (a);
 }
