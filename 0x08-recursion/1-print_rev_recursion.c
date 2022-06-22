@@ -2,7 +2,7 @@
 
 /**
  * _print_rev_recursion - function prints a string in reverse
- * *s:argument parameter representing the string
+ * @s:argument parameter representing the string
  * Return:0
  */
 
@@ -12,7 +12,6 @@ void _print_rev_recursion(char *s)
 
 	if (s[a] == '\0')
 	{
-		_putchar('\n');
 		return;
 	}
 	_print_rev_recursion(s + 1);
