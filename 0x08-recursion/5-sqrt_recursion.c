@@ -23,4 +23,6 @@ int _sqrt_recursion(int n)
 		a++;
 		return (_sqrt_recursion(n));
 	}
+	else
+		return (a);
 }
