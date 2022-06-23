@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
 		return (a);
 	if (n > (a * a))
 	{
-		a++;
+		a+=3;
 		return (_sqrt_recursion(n));
 	}
 	else
