@@ -14,13 +14,13 @@ int main(int argc, char *argv[])
 	int sum = 0;
 	int a = 0;
 
-	if (argc <= 1)
+	if (argc < 1)
 	{
 		printf("%d\n", 0);
 	}
 	else
 	{
-		while (argc > 0 && argc--)
+		while (argc-- && argc > 0)
 		{
 			while (argv[argc][a] != '\0')
 			{
