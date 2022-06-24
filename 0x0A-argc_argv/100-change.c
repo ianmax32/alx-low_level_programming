@@ -23,11 +23,7 @@ int main(int argc, char *argv[])
 	{
 		remaining = atoi(argv[1]);
 		if (remaining < 0)
-		{
 			printf("%d\n", 0);
-		}
-		else
-		{	
 		while (remaining >= 0)
 		{
 			if (remaining >= 25)
@@ -44,7 +40,7 @@ int main(int argc, char *argv[])
 			{
 				coins += 1;
 				remaining = remaining - 5;
-			}	
+			}
 			else if (remaining >= 2 && remaining < 5)
 			{
 				coins++;
@@ -61,5 +57,3 @@ int main(int argc, char *argv[])
 	}
 	return (0);
 }
-
-
