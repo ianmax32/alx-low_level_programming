@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * main - program multiplies two numbers and prints the answer followed by new line
+ * main - program multiplies two numbers and prints
+ * the answer followed by new line
  * @argc:counter for the number of arguments
  * @argv:array of all the arguments passed
  * Return:0
