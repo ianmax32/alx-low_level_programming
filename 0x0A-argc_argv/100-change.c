@@ -53,7 +53,6 @@ int main(int argc, char *argv[])
 			}
 		}
 		printf("%d\n", coins - 1);
-		}
 	}
 	return (0);
 }
