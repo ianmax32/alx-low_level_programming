@@ -4,8 +4,8 @@
 /**
  * create_array - function creates an array of chars and initializes
  * it with a speific char
- * @size-argumnent paramater for size
- * @c-char to initialize
+ * @size:argumnent paramater for size
+ * @c:char to initialize
  * Return:0
  */
 
@@ -16,7 +16,7 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 		return (NULL);
-	
+
 	s = malloc(sizeof(char) * size);
 	while (a < size)
 	{
