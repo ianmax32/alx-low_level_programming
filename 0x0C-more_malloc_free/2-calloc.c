@@ -11,8 +11,6 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *s;
-	char *x;
-	unsigned int a = 0;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
@@ -21,11 +19,27 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (s == NULL)
 		return (NULL);
 
-	while (a < (nmemb * size))
+	setmem(s,(nmemb * size),0);
+	
+	return (s);
+}
+
+/**
+ * setmem - function to set memory
+ * @s:array to set memory
+ * @size:seize of the memory
+ * @value:value to set
+ * Return:s
+ */
+
+char *setmem(char *s, unsigned int size, char value)
+{
+	unsigned int a = 0;
+
+	while (a < size)
 	{
-		x[a] = 0;
+		s[a] = value;
 		a++;
 	}
-	s = x;
 	return (s);
 }
