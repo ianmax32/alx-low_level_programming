@@ -1,6 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * add_node_end - function that adds a new node at the end of
@@ -13,7 +14,8 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	size_t counter;
-	list_t newList;
+	list_t *newList;
+	list_t *oldList;
 
 	counter = 0;
 	newList = malloc(sizeof(list_t));
@@ -36,9 +38,10 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	else
 	{
-		while (head->next)
-			head = head->next;
+		oldList = *head;
+		while (oldList->next)
+			oldList = oldList->next;
 	}
-	head->next = new;
+	oldList->next = newList;
 	return (*head);
 }
