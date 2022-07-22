@@ -11,7 +11,7 @@
 int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned int size;
-	unsigned int a; 
+	unsigned int a;
 
 	a = 0;
 	size = (sizeof(long) * 8);
@@ -21,6 +21,6 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	{
 		a = 1;
 	}
-	
+
 	return (a);
 }
