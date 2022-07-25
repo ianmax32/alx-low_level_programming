@@ -35,7 +35,7 @@ int create_file(const char *filename, char *text_content)
 		size++;
 	}
 
-	error = write(fileDes, test_content, size);
+	error = write(fileDes, text_content, size);
 	if (error == -1)
 		return (-1);
 	close(fileDes);
