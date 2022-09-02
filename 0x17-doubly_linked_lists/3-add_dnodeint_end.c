@@ -14,22 +14,22 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
 	list = malloc(sizeof(dlistint_t));
 
-	if(list == NULL)
+	if (list == NULL)
 	{
-		return (NULL)
+		return (NULL);
 	}
 
 	list->prev = NULL;
 	list->next = NULL;
 	list->n = n;
 
-	if(!*head)
+	if (!*head)
 	{
 		*head = list;
 		return (*head);
 	}
 
-	while(*head->next)
+	while (*head->next)
 		*head = *head->next;
 	*head->next = list;
 	list->prev = *head;
